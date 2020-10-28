@@ -1,0 +1,21 @@
+﻿<Window x:Class="TheNextCar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TheNextCar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="641">
+    <Grid>
+        <Button x:Name="StartButton" Content="STOPPED" HorizontalAlignment="Left" Margin="7,323,0,0" VerticalAlignment="Top" Height="58" Width="88" Click="OnStartButtonClicked"/>
+        <Button x:Name="DoorOpenButton" Content="CLOSE" HorizontalAlignment="Left" Margin="161,324,0,0" VerticalAlignment="Top" Height="58" Width="92" RenderTransformOrigin="0.518,0.754" Click="OnDoorOpenButtonClicked"/>
+        <Button x:Name="LockDoorButton" Content="LOCK" HorizontalAlignment="Left" Margin="300,323,0,0" VerticalAlignment="Top" Height="58" Width="100" RenderTransformOrigin="0.073,1.42" Click="OnLockDoorButtonClicked"/>
+        <Button x:Name="AccuButton" Content="OFF" HorizontalAlignment="Left" Margin="471,318,0,0" VerticalAlignment="Top" Height="58" Width="109" Click="OnAccuButtonClicked"/>
+        <Label x:Name="status" Content="Label" HorizontalAlignment="Left" Margin="10,386,0,0" VerticalAlignment="Top" Height="38" Width="82"/>
+        <Label x:Name="DoorOpenState" Content="Door is opened" HorizontalAlignment="Left" Margin="169,386,0,0" VerticalAlignment="Top" Height="45" Width="84"/>
+        <Label x:Name="LockDoorState" Content="Door is unlocked" HorizontalAlignment="Left" Margin="312,382,0,0" VerticalAlignment="Top" Height="49" Width="88"/>
+        <Label x:Name="AccuState" Content="no power" HorizontalAlignment="Left" Margin="480,382,0,0" VerticalAlignment="Top" Height="46" Width="92" RenderTransformOrigin="-0.188,0.624"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="313" Margin="10,10,0,0" VerticalAlignment="Top" Width="550" Source="/assets/navigation.jpg"/>
+
+    </Grid>
+</Window>
